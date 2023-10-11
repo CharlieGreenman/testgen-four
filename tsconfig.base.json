@@ -38,6 +38,9 @@
       ],
       "@testgen-four/data-services": [
         "libs/data-services/src/index.ts"
+      ],
+      "@testgen-four/data-graphql": [
+        "libs/data-graphql/src/index.ts"
       ]
     }
   },
