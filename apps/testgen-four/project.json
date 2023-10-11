@@ -7,7 +7,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/testgen-four",
         "index": "apps/testgen-four/src/index.html",
@@ -19,7 +21,9 @@
           "apps/testgen-four/src/favicon.ico",
           "apps/testgen-four/src/assets"
         ],
-        "styles": ["apps/testgen-four/src/styles.scss"],
+        "styles": [
+          "apps/testgen-four/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -38,8 +42,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/testgen-four/src/environments/environment.ts",
-              "with": "apps/testgen-four/src/environments/environment.prod.ts"
+              "replace": "libs/common/environments/src/lib/environment.ts",
+              "with": "libs/common/environments/src/lib/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -84,7 +88,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/apps/testgen-four"],
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/testgen-four"
+      ],
       "options": {
         "jestConfig": "apps/testgen-four/jest.config.ts",
         "passWithNoTests": true
