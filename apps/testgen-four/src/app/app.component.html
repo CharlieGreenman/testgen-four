@@ -1,12 +1,14 @@
 <testgen-four-global-header
   (sideNavToggle)="sideNavToggle()"
+  (logIn)="logIn()"
+  (signUp)="signUp()"
 ></testgen-four-global-header>
 <div class="wrapper">
   <div class="container">
     <testgen-four-global-sidenav [opened]="sideNavOpen">
-      <mat-nav-list sidenav="">
+      <mat-nav-list sidenav>
         <a
-          mat-list-item=""
+          mat-list-item
           routerlinkactive="active-link"
           routerlink="/"
           (click)="sideNavToggle()"
