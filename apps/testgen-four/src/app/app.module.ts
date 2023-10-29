@@ -12,6 +12,7 @@ import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 import { StoreModule } from "@ngrx/store";
 import { environment } from "@testgen-four/common/common-environment";
 import { StoreRouterConnectingModule, routerReducer } from "@ngrx/router-store";
+import { AuthCoreModule } from "@testgen-four/common/common-services";
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,7 +20,7 @@ import { StoreRouterConnectingModule, routerReducer } from "@ngrx/router-store";
     maxAge: 25, // Retains last 25 states
     logOnly: environment.production, // Restrict extension to log-only mode
     autoPause: true, // Pauses recording actions and state changes when the extension window is not open
-  }),],
+  }), AuthCoreModule],
   providers: [],
   bootstrap: [AppComponent],
 })
